@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\AuthoringTool\ContentArchiveLibrary.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8477EA81-DA37-43F6-A34F-3CB57D4CF7CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ContentArchiveLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.6136.25605</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nintendo.Authoring.AuthoringLibrary</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="FileSystemMetaLibrary">
+      <HintPath>lib\FileSystemMetaLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="CryptoLibrary">
+      <HintPath>lib\CryptoLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="YamlDotNet">
+      <HintPath>lib\YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="ImageLibrary">
+      <HintPath>lib\ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationControlPropertyModel">
+      <HintPath>lib\ApplicationControlPropertyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="ETicketLibrary">
+      <HintPath>lib\ETicketLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentArchiveLibrary\Logo.cs" />
+    <Compile Include="ApiList.cs" />
+    <Compile Include="ApiModel.cs" />
+    <Compile Include="ApiXml.cs" />
+    <Compile Include="ArchiveReconstructionUtils.cs" />
+    <Compile Include="AuthoringConfiguration.cs" />
+    <Compile Include="RsaKey.cs" />
+    <Compile Include="AesKey.cs" />
+    <Compile Include="DebugConfiguration.cs" />
+    <Compile Include="KeyConfiguration.cs" />
+    <Compile Include="DebugApiList.cs" />
+    <Compile Include="DebugApiModel.cs" />
+    <Compile Include="DebugApiXml.cs" />
+    <Compile Include="IdConverter.cs" />
+    <Compile Include="DotMetaReader.cs" />
+    <Compile Include="ByteData.cs" />
+    <Compile Include="CardSpecModel.cs" />
+    <Compile Include="CardSpecXmlSource.cs" />
+    <Compile Include="CardSpecXml.cs" />
+    <Compile Include="ExternalContentKeyGenerator.cs" />
+    <Compile Include="TicketCertificateSource.cs" />
+    <Compile Include="SinkStatus.cs" />
+    <Compile Include="SinkUtil.cs" />
+    <Compile Include="FileSink.cs" />
+    <Compile Include="MemorySink.cs" />
+    <Compile Include="SourceThroughSink.cs" />
+    <Compile Include="StreamSink.cs" />
+    <Compile Include="SubSink.cs" />
+    <Compile Include="ReadableSubSink.cs" />
+    <Compile Include="IntegrityHierarchicalStorageSink.cs" />
+    <Compile Include="SourceStatus.cs" />
+    <Compile Include="SourceUtil.cs" />
+    <Compile Include="FileSource.cs" />
+    <Compile Include="MemorySource.cs" />
+    <Compile Include="UpdatableMemorySource.cs" />
+    <Compile Include="StreamSource.cs" />
+    <Compile Include="PaddingSource.cs" />
+    <Compile Include="ConcatenatedSource.cs" />
+    <Compile Include="SinkLinkedSource.cs" />
+    <Compile Include="AlignedSource.cs" />
+    <Compile Include="Aes128CtrEncryptedSource.cs" />
+    <Compile Include="Aes128XtsEncryptedSource.cs" />
+    <Compile Include="Rsa2048PssSha256SignedSource.cs" />
+    <Compile Include="Sha256HierarchicalHashCalculatedSource.cs" />
+    <Compile Include="AdaptedSource.cs" />
+    <Compile Include="CliCompatibleSource.cs" />
+    <Compile Include="SubSource.cs" />
+    <Compile Include="Sha256StreamHashSource.cs" />
+    <Compile Include="HexStringConvertedSource.cs" />
+    <Compile Include="FileSystemArchvieFileSource.cs" />
+    <Compile Include="FileSystemArchvieBaseSource.cs" />
+    <Compile Include="IntegrityHierarchicalMasterHashSource.cs" />
+    <Compile Include="IntegrityHierarchicalLayerHashSource.cs" />
+    <Compile Include="IntegrityHierarchicalHashCalculatedSource.cs" />
+    <Compile Include="ArchiveFormatType.cs" />
+    <Compile Include="ContentArchiveLibraryInterface.cs" />
+    <Compile Include="FilterType.cs" />
+    <Compile Include="Pair`2.cs" />
+    <Compile Include="FilterDescription.cs" />
+    <Compile Include="ContentHashSource.cs" />
+    <Compile Include="HashNameEntryPartitionFsHeaderSource`1.cs" />
+    <Compile Include="Sha256PartitionFsHashSource.cs" />
+    <Compile Include="HashAdaptedSha256PartitionFsHeaderSource.cs" />
+    <Compile Include="IconConverter.cs" />
+    <Compile Include="IConnector.cs" />
+    <Compile Include="ISink.cs" />
+    <Compile Include="IReadableSink.cs" />
+    <Compile Include="ISource.cs" />
+    <Compile Include="IHierarchicalHashCalculatedSource.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Lz4.cs" />
+    <Compile Include="MiddlewareList.cs" />
+    <Compile Include="MiddlewareModel.cs" />
+    <Compile Include="MiddlewareXml.cs" />
+    <Compile Include="ModifiableNintendoContentArchive.cs" />
+    <Compile Include="ModifiableNintendoSubmissionPackageArchive.cs" />
+    <Compile Include="NintendoContentArchiveContentType.cs" />
+    <Compile Include="NintendoContentArchiveHashType.cs" />
+    <Compile Include="NintendoContentArchiveEncryptionType.cs" />
+    <Compile Include="NintendoContentArchiveEncryptionKeyIndex.cs" />
+    <Compile Include="NintendoContentArchivePartitionType.cs" />
+    <Compile Include="NintendoContentAdfWriter.cs" />
+    <Compile Include="NintendoContentAdfReader.cs" />
+    <Compile Include="NintendoContentFileSystemEntryInfoContainer.cs" />
+    <Compile Include="NintendoContentArchiveSource.cs" />
+    <Compile Include="ApplicationControl.cs" />
+    <Compile Include="ApplicationControlPropertyXmlSource.cs" />
+    <Compile Include="ContentMetaAttribute.cs" />
+    <Compile Include="ContentMetaAttributeExtension.cs" />
+    <Compile Include="ContentMetaDescriptor.cs" />
+    <Compile Include="NintendoContentMetaBase.cs" />
+    <Compile Include="NintendoContentMetaBaseSource.cs" />
+    <Compile Include="NintendoContentMetaArchiveSource.cs" />
+    <Compile Include="NintendoContentMetaXmlSource.cs" />
+    <Compile Include="ContentModel.cs" />
+    <Compile Include="ContentMetaModel.cs" />
+    <Compile Include="ApplicationContentMetaModel.cs" />
+    <Compile Include="AddOnContentContentMetaModel.cs" />
+    <Compile Include="PatchContentMetaModel.cs" />
+    <Compile Include="SystemUpdateModel.cs" />
+    <Compile Include="NintendoSubmissionPackageContentResource.cs" />
+    <Compile Include="NintendoSubmissionPackageContentInfo.cs" />
+    <Compile Include="NintendoSubmissionPackageAdfWriter.cs" />
+    <Compile Include="EntryReplaceRule.cs" />
+    <Compile Include="NintendoSubmissionPackageFileSystemInfo.cs" />
+    <Compile Include="NintendoSubmissionPackageAdfReader.cs" />
+    <Compile Include="NintendoSubmissionPackageExtraData.cs" />
+    <Compile Include="NintendoSubmissionPackageArchiveUtils.cs" />
+    <Compile Include="NintendoSubmissionPackageArchive.cs" />
+    <Compile Include="NsoHeader.cs" />
+    <Compile Include="NsoHeaderFlags.cs" />
+    <Compile Include="NsoFile.cs" />
+    <Compile Include="PartitionFsAdfWriter.cs" />
+    <Compile Include="PartitionFsAdfReader.cs" />
+    <Compile Include="PartitionFsArchiveSource.cs" />
+    <Compile Include="ProgramInfoModel.cs" />
+    <Compile Include="ProgramInfoXmlSource.cs" />
+    <Compile Include="ProgramInfoXml.cs" />
+    <Compile Include="ProdEncryptedNintendoSubmissionPackageArchive.cs" />
+    <Compile Include="XciUtils.cs" />
+    <Compile Include="XciHeaderSource.cs" />
+    <Compile Include="XciSizeInfo.cs" />
+    <Compile Include="ProdEncryptedXciArchive.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="RangeList.cs" />
+    <Compile Include="ResultXmlGenerator.cs" />
+    <Compile Include="CardParamModel.cs" />
+    <Compile Include="ResultModel.cs" />
+    <Compile Include="RomFsAdfWriter.cs" />
+    <Compile Include="DirectoryList.cs" />
+    <Compile Include="RomFsAdfReader.cs" />
+    <Compile Include="RomFsArchiveSource.cs" />
+    <Compile Include="RsaCryptoDriver.cs" />
+    <Compile Include="SourceBasedStream.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="SourceSinkDriver.cs" />
+    <Compile Include="SubStream.cs" />
+    <Compile Include="ModuleInfoType.cs" />
+    <Compile Include="ModuleInfo.cs" />
+    <Compile Include="SymbolExtract.cs" />
+    <Compile Include="TicketSource.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="TicketUtility.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentArchiveLibrary\Logo.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
