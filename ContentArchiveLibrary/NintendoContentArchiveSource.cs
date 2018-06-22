@@ -197,7 +197,7 @@ namespace Nintendo.Authoring.AuthoringLibrary
       entryInfo1.hashType = (byte) 2;
       entryInfo1.encryptionType = (byte) 1;
       PartitionFileSystemInfo partitionFileSystemInfo = new PartitionFileSystemInfo();
-      \u003C\u003Ef__AnonymousType0<byte[], string>[] dataArray = new \u003C\u003Ef__AnonymousType0<byte[], string>[2]
+      var dataArray = new[]
       {
         new
         {
