@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\AuthoringTool\AuthoringTool.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EDD328E-2338-44A8-8A7A-A2A9AC89D334}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>AuthoringTool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.6136.25605</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nintendo.Authoring.AuthoringTool</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ContentArchiveLibrary">
+      <HintPath>lib\ContentArchiveLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="FileSystemMetaLibrary">
+      <HintPath>lib\FileSystemMetaLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InvalidOptionException.cs" />
+    <Compile Include="ExtractEntryNotFoundException.cs" />
+    <Compile Include="OptionDescription.cs" />
+    <Compile Include="IOption.cs" />
+    <Compile Include="OptionUtil.cs" />
+    <Compile Include="CreateCommandOptionBase.cs" />
+    <Compile Include="NoneOption.cs" />
+    <Compile Include="HelpOption.cs" />
+    <Compile Include="CreateFsOption.cs" />
+    <Compile Include="CreateNcaOption.cs" />
+    <Compile Include="ContentMetaType.cs" />
+    <Compile Include="CreateNspOption.cs" />
+    <Compile Include="CreateNspMetaOption.cs" />
+    <Compile Include="CreateNspdOption.cs" />
+    <Compile Include="ExtractNspOption.cs" />
+    <Compile Include="ExtractOption.cs" />
+    <Compile Include="MergeNspOption.cs" />
+    <Compile Include="ReplaceOption.cs" />
+    <Compile Include="ListOption.cs" />
+    <Compile Include="ProdEncryptionOption.cs" />
+    <Compile Include="Option.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
