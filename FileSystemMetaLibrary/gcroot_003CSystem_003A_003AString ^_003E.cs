@@ -1,0 +1,14 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: gcroot<System::String ^>
+// Assembly: FileSystemMetaLibrary, Version=1.0.6136.25604, Culture=neutral, PublicKeyToken=null
+// MVID: 4C5582A3-19FF-49E7-85B4-2E885794566F
+// Assembly location: E:\AuthoringTool\FileSystemMetaLibrary.dll
+
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+[NativeCppClass]
+[StructLayout(LayoutKind.Sequential, Size = 4)]
+internal struct gcroot\u003CSystem\u003A\u003AString\u0020\u005E\u003E
+{
+}
